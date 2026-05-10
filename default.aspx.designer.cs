@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Prac6
+namespace Prac5
 {
 
 
@@ -33,13 +33,13 @@ namespace Prac6
         protected global::System.Web.UI.WebControls.Label lblHeading;
 
         /// <summary>
-        /// lblName control.
+        /// lblStudentName control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblName;
+        protected global::System.Web.UI.WebControls.Label lblStudentName;
 
         /// <summary>
         /// txtName control.
@@ -51,13 +51,13 @@ namespace Prac6
         protected global::System.Web.UI.WebControls.TextBox txtName;
 
         /// <summary>
-        /// rfvName control.
+        /// rfvStudentName control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvName;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvStudentName;
 
         /// <summary>
         /// lblEmail control.
@@ -78,121 +78,67 @@ namespace Prac6
         protected global::System.Web.UI.WebControls.TextBox txtEmail;
 
         /// <summary>
-        /// revEmail control.
+        /// rfvEmail control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RegularExpressionValidator revEmail;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvEmail;
 
         /// <summary>
-        /// lblSelectSize control.
+        /// rfvCorrectEmail control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblSelectSize;
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator rfvCorrectEmail;
 
         /// <summary>
-        /// ddlSize control.
+        /// lstCourses control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList ddlSize;
+        protected global::System.Web.UI.WebControls.ListBox lstCourses;
 
         /// <summary>
-        /// rfvSize control.
+        /// lblStudyMode control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvSize;
+        protected global::System.Web.UI.WebControls.Label lblStudyMode;
 
         /// <summary>
-        /// lblToppings control.
+        /// ddlStudyMode control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblToppings;
+        protected global::System.Web.UI.WebControls.DropDownList ddlStudyMode;
 
         /// <summary>
-        /// lstToppings control.
+        /// rfvStudyMode control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ListBox lstToppings;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvStudyMode;
 
         /// <summary>
-        /// rfvToppings control.
+        /// btnRegister control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvToppings;
-
-        /// <summary>
-        /// lblCrustType control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblCrustType;
-
-        /// <summary>
-        /// rdoThick control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.RadioButton rdoThick;
-
-        /// <summary>
-        /// rdoThin control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.RadioButton rdoThin;
-
-        /// <summary>
-        /// cbxTip control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox cbxTip;
-
-        /// <summary>
-        /// txtTip control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtTip;
-
-        /// <summary>
-        /// btnOrder control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnOrder;
+        protected global::System.Web.UI.WebControls.Button btnRegister;
 
         /// <summary>
         /// btnClear control.
@@ -211,5 +157,23 @@ namespace Prac6
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label lblOutput;
+
+        /// <summary>
+        /// rfvStudyMode0 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvStudyMode0;
+
+        /// <summary>
+        /// imgCourse control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Image imgCourse;
     }
 }
