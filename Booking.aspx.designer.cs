@@ -11,7 +11,7 @@ namespace Practical_9._0
 {
 
 
-    public partial class _default
+    public partial class Booking
     {
 
         /// <summary>
@@ -33,58 +33,49 @@ namespace Practical_9._0
         protected global::System.Web.UI.WebControls.Label lblHeader;
 
         /// <summary>
-        /// lblName control.
+        /// lblOutput control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblName;
+        protected global::System.Web.UI.WebControls.Label lblOutput;
 
         /// <summary>
-        /// txtName control.
+        /// lblModule control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtName;
+        protected global::System.Web.UI.WebControls.Label lblModule;
 
         /// <summary>
-        /// rfvName control.
+        /// ddlModule control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvName;
+        protected global::System.Web.UI.WebControls.DropDownList ddlModule;
 
         /// <summary>
-        /// lblStudyLevel control.
+        /// lblSelect control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblStudyLevel;
+        protected global::System.Web.UI.WebControls.Label lblSelect;
 
         /// <summary>
-        /// ddlStudyLevel control.
+        /// Calendar1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList ddlStudyLevel;
-
-        /// <summary>
-        /// rfvStudyLevel control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvStudyLevel;
+        protected global::System.Web.UI.WebControls.Calendar Calendar1;
 
         /// <summary>
         /// btnBook control.

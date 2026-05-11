@@ -1,66 +1,61 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="default.aspx.cs" Inherits="Prac5._default" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="default.aspx.cs" Inherits="Practical_9._0._default" %>
 
 <!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml" style="background-color: #FFCC66">
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title></title>
+    <style type="text/css">
+        .auto-style1 {
+            width: 190px;
+        }
+        .auto-style2 {
+            width: 716px;
+            margin-left: 80px;
+        }
+    </style>
 </head>
-<body>
+<body style="background-color: lightblue;">
     <form id="form1" runat="server">
         <div>
+            <table style="width: 100%; height: 555px;">
+                <tr>
+                    <td class="auto-style1">&nbsp;</td>
+                    <td class="auto-style2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <asp:Label ID="lblHeader" runat="server" Font-Size="25px" Text="Welcome to TutorChain Slot Booking System"></asp:Label>
+                        &nbsp;</td>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td class="auto-style1">&nbsp;</td>
+                    <td class="auto-style2">
+                        <asp:Label ID="lblName" runat="server" Text="Enter Your Name:"></asp:Label>
+                        <asp:TextBox ID="txtName" runat="server"></asp:TextBox>
+                        <asp:RequiredFieldValidator ID="rfvName" runat="server" ControlToValidate="txtName" ErrorMessage="Please Enter A Name!"></asp:RequiredFieldValidator>
+                        <br />
+                        <br />
+                        <asp:Label ID="lblStudyLevel" runat="server" Text="Select Your Study Level:"></asp:Label>
+                        <asp:DropDownList ID="ddlStudyLevel" runat="server" Height="34px" Width="170px">
+                            <asp:ListItem>Select A Study Level</asp:ListItem>
+                            <asp:ListItem>Undergraduate</asp:ListItem>
+                            <asp:ListItem>Postgraduate</asp:ListItem>
+                        </asp:DropDownList>
+                        <asp:RequiredFieldValidator ID="rfvStudyLevel" runat="server" ControlToValidate="ddlStudyLevel" ErrorMessage="Please Select A Study Level!"></asp:RequiredFieldValidator>
+                        <br />
+                        <br />
+                        <br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <asp:Button ID="btnBook" runat="server" BackColor="Cyan" Height="28px" OnClick="btnBook_Click" Text="Continue" Width="174px" />
+                    </td>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td class="auto-style1">&nbsp;</td>
+                    <td class="auto-style2">&nbsp;</td>
+                    <td>&nbsp;</td>
+                </tr>
+            </table>
         </div>
-        <p style="margin-left: 280px">
-            <asp:Label ID="lblHeading" runat="server" Font-Bold="True" Font-Size="Medium" Text="Course Registration Form"></asp:Label>
-        </p>
-        <p style="margin-left: 280px">
-            <asp:Label ID="lblStudentName" runat="server" Text="Student Name:"></asp:Label>
-            <asp:TextBox ID="txtName" runat="server"></asp:TextBox>
-            <asp:RequiredFieldValidator ID="rfvStudentName" runat="server" ErrorMessage="Name Required!" ForeColor="Red" ControlToValidate="txtName"></asp:RequiredFieldValidator>
-        </p>
-        <p style="margin-left: 280px">
-            <asp:Label ID="lblEmail" runat="server" Text="Email:"></asp:Label>
-            <asp:TextBox ID="txtEmail" runat="server"></asp:TextBox>
-            <asp:RequiredFieldValidator ID="rfvEmail" runat="server" ErrorMessage="Email Required!" ForeColor="Red" ControlToValidate="txtEmail" ></asp:RequiredFieldValidator>
-            <asp:RegularExpressionValidator ID="rfvCorrectEmail" runat="server" ControlToValidate="txtEmail" ErrorMessage="Enter Correct Form Email!" ForeColor="Red" style="text-align: right" ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*"></asp:RegularExpressionValidator>
-        </p>
-        <p style="margin-left: 280px">
-            <asp:ListBox ID="lstCourses" runat="server" Height="153px" Width="335px">
-                <asp:ListItem>Web Development</asp:ListItem>
-                <asp:ListItem>Artifical Intelligence</asp:ListItem>
-                <asp:ListItem>Data Science</asp:ListItem>
-                <asp:ListItem>CyberSecurity</asp:ListItem>
-            </asp:ListBox>
-        </p>
-        <p style="margin-left: 280px">
-            <asp:Label ID="lblStudyMode" runat="server" Text="Study Mode:"></asp:Label>
-            <asp:DropDownList ID="ddlStudyMode" runat="server" AutoPostBack="True">
-                <asp:ListItem Value="">Select Study Mode</asp:ListItem>
-                <asp:ListItem>Full-Time</asp:ListItem>
-                <asp:ListItem>Part-Time</asp:ListItem>
-                <asp:ListItem>Only Learning</asp:ListItem>
-            </asp:DropDownList>
-            <asp:RequiredFieldValidator ID="rfvStudyMode" runat="server" ErrorMessage="Study Mode Required!" ForeColor="Red" ControlToValidate="ddlStudyMode"></asp:RequiredFieldValidator>
-        </p>
-        <p style="margin-left: 280px">
-            <asp:Button ID="btnRegister" runat="server" BackColor="#33CC33" Height="30px" OnClick="btnRegister_Click" Text="Register" Width="121px" />
-            <asp:Button ID="btnClear" runat="server" BackColor="Yellow" OnClick="btnClear_Click" Text="Clear" />
-            <br /><br />
-
-<asp:Label ID="lblOutput" runat="server" ForeColor="Blue"></asp:Label>
-
-        </p>
-        <p style="margin-left: 280px">
-            <asp:RequiredFieldValidator ID="rfvStudyMode0" runat="server" ErrorMessage="Make sure all the required information have been provided!" ForeColor="Red" ControlToValidate="lstCourses"></asp:RequiredFieldValidator>
-
-<br /><br />
-
-<asp:Image ID="imgCourse" runat="server" Width="180px" Visible="false" />
-        </p>
-        <p style="margin-left: 280px">
-            &nbsp;</p>
-        <p style="margin-left: 280px">
-            &nbsp;</p>
     </form>
 </body>
 </html>
